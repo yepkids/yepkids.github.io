@@ -6,17 +6,19 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
+Contact: yshhan@ucdavis.edu
 {% include base_path %}
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Atmospheric Sciences, University of California , 2026 (expected)
+* B.S. in Meteorology and Atmospheric Science, Pennsylvania State University, 2021  
+<span style="font-size: 14px;">Minor in: Geographical Information Science & Energy Business and Finance </span>
 
-Work experience
-======
+A full version of my CV can be found [**here**](https://yepkids.github.io/files/Yushan_CV.pdf)  
+
+<!-- Work experience -->
+<!-- ======
 * Spring 2024: Academic Pages Collaborator
   * GitHub University
   * Duties includes: Updates and improvements to template
@@ -30,9 +32,9 @@ Work experience
 * Summer 2015: Research Assistant
   * GitHub University
   * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * Supervisor: Professor Git -->
   
-Skills
+<!-- Skills
 ======
 * Skill 1
 * Skill 2
@@ -61,4 +63,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
