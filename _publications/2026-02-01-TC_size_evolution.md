@@ -11,6 +11,8 @@ paperurl: 'https://doi.org/10.22541/essoar.177038847.73410174/v1'
 #citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 
+**Han, Y.**, & Ullrich, P. A. (2026). The Evolution of Tropical Cyclone Intensity and Size in Observations and HighResMIP Models. Submitted to Journal of Geophysical Research: Atmospheres. 
+
 Abstract
 ========
 

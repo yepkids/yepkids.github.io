@@ -11,6 +11,8 @@ paperurl: 'https://yepkids.github.io/files/ML_heat_index.pdf'
 #citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 
+**Han, Y.**\*, Randall, C.\* (2026; Co-first author). Machine learning-based prediction of heat index in selected U.S. cities. Submitted to arXiv preprint. 
+
 Abstract
 ========
 

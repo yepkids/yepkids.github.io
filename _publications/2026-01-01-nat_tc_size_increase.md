@@ -11,6 +11,8 @@ paperurl: ' https://doi.org/10.1029/2025EF007162'
 #citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
 
+Balaguru, K., Chang, C. C., Leung, L. R., Ullrich, P. A., **Han, Y.**, Rice, J. R., ... & Judi, D. R. (2026). Recent tropical cyclone outer size increases in the western North Atlantic. Earth's Future, 14(2), e2025EF007162. 
+
 Abstract
 ========
 The outer size of a tropical cyclone (TC) plays a pivotal role in its impact through a modulation of wind duration, rainfall extent and storm surge. While global and basin scale trends in TC size have been examined previously, whether there have been regional changes over time remains unclear. Here, using a suite of observations and reanalyses, we detect an increasing TC outer size over the western North Atlantic during 1979–2022. Over the western subtropical North Atlantic where the largest changes are found, the area-averaged increase in the radius of 17 
