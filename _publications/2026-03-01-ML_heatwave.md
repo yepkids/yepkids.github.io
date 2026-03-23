@@ -7,7 +7,7 @@ excerpt: "We apply Random Forest and Gated Recurrent Unit models to predict next
 date: 2026-02-01
 venue: '[In preprint]. ArXiv'
 #slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
-paperurl: 'https://yepkids.github.io/files/ML_heat_index.pdf'
+paperurl: 'https://arxiv.org/abs/2603.19488'
 #citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 
