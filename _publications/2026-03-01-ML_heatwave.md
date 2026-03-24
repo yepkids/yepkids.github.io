@@ -39,4 +39,4 @@ importance scores output by Random Forest models. The ML models designed in
 this study can be used to assist with local heat index forecasting and extreme heat
 warning issuance at minimal computational cost
 
-[Prepint Link](https://yepkids.github.io/files/ML_heat_index.pdf)
+[Prepint Link](https://arxiv.org/abs/2603.19488)

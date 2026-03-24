@@ -3,7 +3,7 @@ title: "Recent tropical cyclone outer size increases in the western North Atlant
 collection: publications
 category: manuscripts
 permalink: /publications/2026-02-01-nat_tc_size_increase
-excerpt: 'We investigate North Alantic tropical cyclone size in Observation, ERA5, and E3SM models'
+excerpt: 'We investigate North Alantic tropical cyclone size trends in observation, ERA5, and E3SM models'
 date: 2026-01-01
 venue: "Earth's Future"
 #slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
