@@ -11,7 +11,7 @@ My name is Yushan Han (韓雨杉) or Shawn. Welcome to my tree house! Why call i
 
 I am also the co-founder of the first student meteorology club union in China. The union now has 8 active members from 3 universities and 5 high schools in the provience of Guangdong, where I was born.
 
-Fun Fact: I started chasing typhoons/hurricanes from 4-year old! My introductory typhoon was *Dujuan* (2003).
+Fun Fact: I started chasing typhoons/hurricanes from 4 years old! My introductory typhoon was *Dujuan* (2003).
 
 Research highlights
 ======
