@@ -19,6 +19,8 @@ Research highlights
 
 3. My side project on "Machine learning-based prediction of heat index in selected U.S. cities" has just been published in arXiv [preprint](https://arxiv.org/abs/2603.19488). This work was transformed from a graduate-level statistics course's final project.
 
+4. I participated in the work titled "A Unified Storm Tracking Framework for Investigating the Climatology of Storms over the Continental United States," which has been submitted to the *Journal of Geophysical Research: Atmosphere*. In this paper, we propose a framework for classifying mesoscale convective systems and expand the capabilities of SyCLoPS to more effectively detect inland low-pressure systems (LPSs) and demarcat their impact zones.
+
 More information on the [Publications](https://yepkids.github.io/publications) page.
 
 More about me
