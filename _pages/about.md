@@ -15,7 +15,7 @@ Fun Fact: I started chasing typhoons/hurricanes from 4 years old! My introductor
 
 Research highlights
 ======
-1. I will present our latest paper in [preprint](https://doi.org/10.22541/essoar.177038847.73410174/v1), "The evolution of tropical cyclone intensity and size in observations and HighResMIP models," at the *AMS 37th Conference on Hurricanes and Tropical Meteorology* (Poster #70, Tue P.M., Mar 31). In this work, we study factors controlling tropical cyclone (TC) intensity-size evolution and develop a novel way to detect TC size in model outputs that enables direct model-observation comparisons. 
+1. I will present our latest paper in [preprint](https://doi.org/10.22541/essoar.177038847.73410174/v1), "The evolution of tropical cyclone intensity and size in observations and HighResMIP models," at the *AMS 37th Conference on Hurricanes and Tropical Meteorology* (Poster #70, [Abstract Link](https://ams.confex.com/ams/37Hurricanes/meetingapp.cgi/Paper/480733)). In this work, we study factors controlling tropical cyclone (TC) intensity-size evolution and develop a novel way to detect TC size in model outputs that enables direct model-observation comparisons. 
 
 2. Our [2025 paper](https://doi.org/10.1029/2024JD041287) published in *Journal of Geophysical Research: Atmosphere*, 'The System for Classification of Low-Pressure Systems (SyCLoPS): An All-in-One Objective Framework for Large-Scale Datasets', has been selected as an Eos [Editor's Highlight](https://eos.org/editor-highlights/the-all-in-one-cyclone-identification-framework).
 
