@@ -15,11 +15,13 @@ Fun Fact: I started chasing typhoons/hurricanes from 4 years old! My introductor
 
 Research highlights
 ======
-1. I will present our latest paper in [preprint](https://doi.org/10.22541/essoar.177038847.73410174/v1), "The evolution of tropical cyclone intensity and size in observations and HighResMIP models," at the *AMS 37th Conference on Hurricanes and Tropical Meteorology* (Poster #70, [Abstract Link](https://ams.confex.com/ams/37Hurricanes/meetingapp.cgi/Paper/480733)). In this work, we study factors controlling tropical cyclone (TC) intensity-size evolution and develop a novel way to detect TC size in model outputs that enables direct model-observation comparisons. 
+1. At the the *AMS 37th Conference on Hurricanes and Tropical Meteorology*, my poster presentation won the first place student presentation award! The presentation was on our latest paper in [preprint](https://doi.org/10.22541/essoar.177038847.73410174/v1), "The evolution of tropical cyclone intensity and size in observations and HighResMIP models," now in revision. In this work, we study factors controlling tropical cyclone (TC) intensity-size evolution and develop a novel way to detect TC size in model outputs that enables direct model-observation comparisons. 
 
 2. Our [2025 paper](https://doi.org/10.1029/2024JD041287) published in *Journal of Geophysical Research: Atmosphere*, 'The System for Classification of Low-Pressure Systems (SyCLoPS): An All-in-One Objective Framework for Large-Scale Datasets', has been selected as an Eos [Editor's Highlight](https://eos.org/editor-highlights/the-all-in-one-cyclone-identification-framework).
 
 3. My side project on "Machine learning-based prediction of heat index in selected U.S. cities" has just been published in arXiv [preprint](https://arxiv.org/abs/2603.19488). This work was transformed from a graduate-level statistics course's final project.
+
+4. I co-authored with European researchers on the Reanalysis-Augmented Best Tracks (RABTracks) project submitted to ESSD (preprint available soon). The project uses multiple reanalysis products and tropical cyclone trackers to extend and supplement the current tropical cyclone best-track dataset IBTrACS.
 
 4. I participated in the work titled "A Unified Storm Tracking Framework for Investigating the Climatology of Storms over the Continental United States," which has been submitted to the *Journal of Geophysical Research: Atmosphere*. In this paper, we propose a framework for classifying mesoscale convective systems and expand the capabilities of SyCLoPS to more effectively detect inland low-pressure systems (LPSs) and demarcat their impact zones.
 

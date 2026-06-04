@@ -3,7 +3,7 @@ title: "SyCLoPS"
 collection: software
 type: "[Python] Role: Main Developer"
 permalink: /software/software-syclops
-venue: "Current Ver. 1.1.3 (2026-03)"
+venue: "Current Ver. 1.1.5 (2026-06)"
 date: 2024-04-01
 location: "Main Developer"
 ---
