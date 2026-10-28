@@ -1,4 +1,4 @@
 # Update this selection when the WxChallenge forecast city changes.
-default_station: KMSP
-default_state: MN
-default_name: Minneapolis, MN
+default_station: KEDU
+default_state: CA
+default_name: Davis, CA
