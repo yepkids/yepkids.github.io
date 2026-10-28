@@ -84,7 +84,7 @@ async function loadStations() {
     const defaultID = root.dataset.defaultStation.replace(/^K(?=[A-Z0-9]{3}$)/, '');
     if (state === root.dataset.defaultState && stations.some(feature => feature.id === defaultID)) el('station').value = defaultID;
     el('generate').disabled = !stations.length;
-    el('status').textContent = stations.length ? 'Choose a station and generate the next ECMWF 12 UTC forecast.' : 'No active stations available in this directory.';
+    el('status').textContent = stations.length ? 'Choose a station and generate the next-day forecast based on the latest ECMWF 12 UTC run.' : 'No active stations available in this directory.';
   } catch (error) {
     if (state !== el('state').value) return;
     el('station').replaceChildren(option('', 'Station directory unavailable'));
