@@ -25,7 +25,10 @@ main:
     
   - title: "CV"
     url: /cv/
-    
+  
+    - title: "AI Forecast"
+    url: /ai-forecast/
+
   # - title: "CV"
   #   url: /cv-json/
     

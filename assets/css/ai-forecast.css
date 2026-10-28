@@ -1,0 +1,22 @@
+#ai-forecast { max-width: 1050px; }
+#ai-forecast .af-eyebrow { color: #317c91; font-size: .8em; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
+#ai-forecast .af-panel { border: 1px solid #84949c66; border-radius: 10px; padding: 1.2em; margin: 1.4em 0; }
+#ai-forecast .af-fields { display: grid; grid-template-columns: 1fr 2fr; gap: 1em; }
+#ai-forecast label { font-size: .85em; font-weight: 600; }
+#ai-forecast select { width: 100%; min-height: 44px; margin-top: .4em; padding: .5em; color: inherit; background: var(--global-bg-color, white); border: 1px solid #84949c; border-radius: 5px; }
+#ai-forecast button { padding: .7em 1em; border: 0; border-radius: 5px; background: #176b80; color: white; cursor: pointer; }
+#ai-forecast button:disabled { opacity: .5; cursor: wait; }
+#ai-forecast button:focus-visible, #ai-forecast select:focus-visible, #ai-forecast summary:focus-visible { outline: 3px solid #d38a25; outline-offset: 3px; }
+#ai-forecast .af-note { font-size: .78em; line-height: 1.6; opacity: .85; }
+#ai-forecast .af-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: .7em; margin: 1.3em 0; }
+#ai-forecast .af-card { padding: 1em; border: 1px solid #84949c66; border-top: 3px solid #317c91; border-radius: 7px; }
+#ai-forecast .af-card span { display: block; font-size: .75em; }
+#ai-forecast .af-card strong { display: block; font-size: clamp(1.1rem, 4vw, 1.7rem); margin-top: .2em; overflow-wrap: anywhere; }
+#ai-forecast .af-table-wrap { overflow-x: auto; }
+#ai-forecast table { display: table; width: 100%; font-size: .78em; }
+#ai-forecast caption { text-align: left; padding: .6em 0; font-weight: 600; }
+#ai-forecast th, #ai-forecast td { padding: .7em; }
+#ai-forecast progress { width: 100%; accent-color: #317c91; }
+#ai-forecast [hidden] { display: none !important; }
+#ai-forecast summary { cursor: pointer; font-weight: 600; }
+@media (max-width: 650px) { #ai-forecast .af-fields { grid-template-columns: 1fr; } #ai-forecast .af-cards { grid-template-columns: repeat(2, 1fr); } }

@@ -1,0 +1,4 @@
+# Update this selection when the WxChallenge forecast city changes.
+default_station: KMSP
+default_state: MN
+default_name: Minneapolis, MN

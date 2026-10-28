@@ -78,6 +78,14 @@ If you are using [Visual Studio Code](https://code.visualstudio.com/) you can us
 
 # Maintenance
 
+## AI Forecast page
+
+The `/ai-forecast/` page runs entirely in the browser, so it works on GitHub Pages without a backend or API keys. It retrieves ECMWF IFS HRES 9 km 12 UTC single runs from Open-Meteo, pairs 134 completed 06–06 UTC cycles with IEM METAR observations, and trains four random forests to correct the ECMWF minimum/maximum temperature, precipitation, and maximum reported gust. Chronological validation trains on the first 120 cycles and tests on the last 14. The displayed forecast is refitted on the most recent 120 cycles. Each forest uses 100 trees, maximum depth 4, minimum 5 samples per leaf, and square-root feature selection.
+
+Update the WxChallenge station default in [_data/ai_forecast.yml](./_data/ai_forecast.yml) whenever the forecast city changes. The station directory supports US ASOS/AWOS stations by state; stations with insufficient observations display unavailable predictions. METAR reports are usually hourly, so observed extremes and precipitation near the 06 UTC boundary approximate official WxChallenge verification. The four trained forests and holdout metrics are cached per station in browser storage for 30 days, while historical forecast downloads are cached for seven days. Repeated forecasts fetch only the latest available 12 UTC ECMWF run. Clearing site data or switching browsers requires training again. Public API availability, browser cross-origin access, and provider rate limits apply.
+
+To verify the model, run `bundle exec jekyll serve` and open `/ai-forecast/`. In that page's browser console, run `(await import('/scripts/ai-forecast-model.test.js')).runTests()` for the UTC-window, METAR parsing, random-forest, and holdout regression checks. The implementation is in [the model module](./assets/js/ai-forecast-model.js) and [the page controller](./assets/js/ai-forecast.js).
+
 Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
 
 This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.

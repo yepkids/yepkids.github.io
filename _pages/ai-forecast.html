@@ -1,0 +1,51 @@
+---
+layout: single
+title: "AI Forecast"
+permalink: /ai-forecast/
+author_profile: false
+---
+
+<link rel="stylesheet" href="{{ '/assets/css/ai-forecast.css' | relative_url }}">
+<div id="ai-forecast" data-default-station="{{ site.data.ai_forecast.default_station }}" data-default-state="{{ site.data.ai_forecast.default_state }}">
+  <p class="af-eyebrow">Station forecasts · 120 training + 14 test cycles</p>
+  <p>A random forest learns local errors in ECMWF IFS HRES 9 km forecasts and predicts minimum and maximum temperature, precipitation, and maximum reported wind gust for the 06–06 UTC cycle.</p>
+  <form id="af-form" class="af-panel">
+    <div class="af-fields">
+      <label>State or territory
+        <select id="af-state" required aria-label="Station state or territory"></select>
+      </label>
+      <label>METAR station
+        <select id="af-station" required aria-describedby="af-default"><option value="">Loading stations…</option></select>
+      </label>
+    </div>
+    <p id="af-default" class="af-note">Configured WxChallenge default: {{ site.data.ai_forecast.default_station }} — {{ site.data.ai_forecast.default_name }}. Select another US station above.</p>
+    <button id="af-generate" type="submit" disabled>Generate AI forecast</button>
+    <button id="af-cancel" type="button" hidden>Cancel</button>
+    <p class="af-note">The first forecast can take several minutes while 134 archived ECMWF runs are downloaded. The trained station model is saved in this browser for 30 days; later forecasts use a fresh ECMWF 12 UTC run without retraining.</p>
+  </form>
+  <p id="af-status" role="status" aria-live="polite">Loading station directory…</p>
+  <progress id="af-progress" max="100" value="0" hidden aria-label="Training data download progress"></progress>
+  <div id="af-results" hidden>
+    <h2 id="af-heading"></h2>
+    <p id="af-period"></p>
+    <div id="af-cards" class="af-cards"></div>
+    <div class="af-table-wrap"><table><caption>ECMWF baseline and random forest prediction</caption><thead><tr><th scope="col">Forecast</th><th scope="col">Low (°F)</th><th scope="col">High (°F)</th><th scope="col">Precip. (in)</th><th scope="col">Gust (kt)</th></tr></thead><tbody id="af-models"></tbody></table></div>
+    <h3>ECMWF forecast inputs</h3>
+    <div class="af-table-wrap"><table><caption>All ECMWF model inputs for the 06–06 UTC cycle</caption><thead><tr><th scope="col">Feature</th><th scope="col">Forecast value</th></tr></thead><tbody id="af-inputs"></tbody></table></div>
+    <h3>Training and validation</h3>
+    <p id="af-training"></p>
+    <div class="af-table-wrap"><table><caption>mean absolute error (MAE) of each variable</caption><thead><tr><th scope="col">Variable</th><th scope="col">Training cycles</th><th scope="col">Test cycles</th><th scope="col">ECMWF MAE</th><th scope="col">Random forest MAE</th></tr></thead><tbody id="af-validation"></tbody></table></div>
+    <ul id="af-warnings" class="af-note"></ul>
+  </div>
+  <details class="af-panel">
+    <summary>How this forecast works</summary>
+    <p>Each completed 06–06 UTC cycle is paired with the previous calendar date’s ECMWF 12 UTC initialization. The newest available 12 UTC run forecasts the following 06–06 UTC cycle. The 134-cycle history contains 120 training cycles followed by 14 test cycles. Forest inputs include ECMWF minimum and maximum temperature, precipitation sum, maximum wind gust, minimum and maximum relative humidity, mean cloud cover, mean CAPE, dominant wind direction, and maximum wind speed. All inputs must be complete for a training row.</p>
+    <p>Four separate random forests predict observed-minus-ECMWF error for minimum temperature, maximum temperature, precipitation, and maximum reported wind gust. Each has 100 trees, maximum depth 4, minimum 5 samples per leaf, and square-root feature selection at every split. Wind direction is encoded as sine and cosine. Predictions add the forest’s estimated error to the raw ECMWF value. Negative precipitation and gust forecasts are set to zero.</p>
+    <p>The last 14 completed cycles are held out for testing. Forests used for testing see only the earlier 120 cycles; the displayed forecast is refitted on the most recent 120 cycles, including the tested dates after evaluation. At least 30 matched training cycles and 5 test cycles are needed to report errors. The forest may perform worse than raw ECMWF; compare the two MAE columns.</p>
+    <p>After training, this browser keeps the four station forests and their test results for 30 days. Each new forecast requests the latest available ECMWF 12 UTC run and applies those saved forests. The historical run cache is separate and lasts seven days. Clearing browser site data, using a different browser, or reaching the 30-day expiry requires training again.</p>
+    <p>METAR observations are grouped into 06–06 UTC windows. We require reports in at least 18 distinct hours per target. Reported temperatures and gusts may miss extremes between METARs; hourly precipitation can straddle the 06 UTC boundary, so these targets approximate official WxChallenge verification. A cycle with no reported gust is treated as zero reported gust. Trace precipitation is treated as zero.</p>
+    <p>Forecasts: <a href="https://open-meteo.com/en/docs/single-runs-api">Open-Meteo Single Runs API</a> (<a href="https://open-meteo.com/en/terms">usage terms</a>), ECMWF IFS HRES 9 km. METAR observations and station metadata: <a href="https://mesonet.agron.iastate.edu/">Iowa Environmental Mesonet</a>. Forecasts are experimental.</p>
+  </details>
+  <noscript>This page needs JavaScript to download observations and train the forecast model.</noscript>
+</div>
+<script type="module" src="{{ '/assets/js/ai-forecast.js' | relative_url }}"></script>
