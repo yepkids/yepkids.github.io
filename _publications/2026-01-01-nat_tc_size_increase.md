@@ -11,7 +11,7 @@ paperurl: ' https://doi.org/10.1029/2025EF007162'
 #citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
 
-Balaguru, K., Chang, C. C., Leung, L. R., Ullrich, P. A., **Han, Y.**, Rice, J. R., ... & Judi, D. R. (2026). Recent tropical cyclone outer size increases in the western North Atlantic. Earth's Future, 14(2), e2025EF007162. 
+Balaguru, K., Chang, C. C., Leung, L. R., Ullrich, P. A., **Han, Y.**, Rice, J. R., ... & Judi, D. R. (2026). Recent tropical cyclone outer size increases in the western North Atlantic. Earth's Future, 14(2), e2025EF007162.
 
 Abstract
 ========
